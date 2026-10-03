@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main(){
+    printf("this is the program run for switch case statements behold ");
+    int a ;
+    printf("please enter the value of a ;");
+    scanf("%d",&a);
+    switch(a){
+        case 0:
+            printf("%d",0);
+            break;
+        case 1:
+            printf("%d",1);
+            break;
+        default:
+            printf("number other than binary entered you fker ;");
+            break;
+        
+    }
+    return 0 ;
+}

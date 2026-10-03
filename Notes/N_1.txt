@@ -1,0 +1,7 @@
+a=4
+printf("%d%d%d",a,++a,a++);
+
+
+output : this  will output 6,6,4 
+Reason: The reason for this to happen is , since operations are being done on same operand in printf compiler doesnt gurannte the
+ order in which this could be done, different compilers may produce different results cause no explicit order is present 

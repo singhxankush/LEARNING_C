@@ -1,0 +1,27 @@
+# include <stdio.h>
+int main(){
+    int a ;
+    printf("please enter the value of grade of the student;");
+    scanf("%d",&a);
+    if (a>90){
+        printf("the grade is A");
+    }
+    else if (a>80){
+        printf("the grade is B");
+    }
+    else if (a>70){
+        printf("the grade is c");
+    }
+    else if (a>60){
+        printf("the grade is d ");
+    }
+    else if (a>50){
+        printf("the grade is e:");
+    }
+    else{
+        printf("You failed mfker");
+    }
+    return 0 ;
+    }
+    
+

@@ -1,0 +1,29 @@
+#include <stdio.h>
+int main(){
+    char alphabet;
+    printf("please enter the value of a");
+    scanf("%c",&alphabet);
+    switch(alphabet)
+    {
+        case 'a':
+        printf("it is vowel");
+        break;
+        case 'e':
+        printf("it is a vowel");
+        break;
+        case 'i':
+        printf("ti is a vowel");
+        break;
+        case 'o':
+        printf("it is a vowel");
+        break;
+        case '
+        u':
+        printf("it is a vowel");
+        break;
+        default:
+            printf("you enterea consonant;");
+            break;
+        
+    }
+}
