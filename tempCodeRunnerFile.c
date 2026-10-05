@@ -1,21 +1,15 @@
 #include <stdio.h>
-int fib_n(int x );
+char* to_up(char str[100]);
 int main(){
-    int n;
-    printf("please enter the value of n:");
-    scanf("%d",&n);
-    printf("the nth elemnt of fibonaci is %d",fib_n(n));
-
-
+    char str[100];
+    printf('please enter the string ');
+    scanf("%d",&str);
+    printf("%s",to_up(str));
 }
-int fib_n(int x ){
-    if (x==1){
-        return 0;
+char* to_up( char str[100]){
+    char new[100];
+    for(int i =0;i<sizeof(str)/sizeof(str[0]);i++){
+        new[i]=str[i]+32;
     }
-    else if (x==2){
-        return 1;
-    }
-    else{
-        return fib_n(x-1)+fib_n(x-2);
-    }
+    return new ;
 }
