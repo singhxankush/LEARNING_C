@@ -1,27 +1,26 @@
-#include <stdio.h>
-int fib(int x );
+# include <stdio.h>
+
+    
+
+
+
 int main(){
-    int a ;
-    printf("Please enter the terms which you want to find ");
-    scanf("%d",&a);
-    printf("The %d terms is %d",a,fib(a));
 
-    
-}
-int fib (int x ){
-    if (x==1){
-        return 0 ;
+    int n ;
+    int fact=0;
+    printf("please enter the value of n ");
+    scanf("%d",&n);
+    for(int i =1;i<n;i++){
+        if (n%i==0){
+            fact+=i;
 
+        }
     }
-    else if  (x==2){
-        return 1;
-
+    if (fact==n){
+        printf("it is a pefect number ");
     }
-    else{
-        return fib(x-1)+fib(x-2);
+    else {
+        printf("it is not a perfect numeber");
     }
     
-
-
-
 }
