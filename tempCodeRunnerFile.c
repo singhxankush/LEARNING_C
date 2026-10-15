@@ -1,15 +1,21 @@
 #include <stdio.h>
 char* to_up(char str[100]);
+char result[100];
+char string[]="ankush";
+int last=0;
 int main(){
-    char str[100];
-    printf('please enter the string ');
-    scanf("%d",&str);
-    printf("%s",to_up(str));
+    
+    printf("please enter the string ");
+    scanf("%s",&string);
+    printf("%s",to_up(string));
 }
 char* to_up( char str[100]){
-    char new[100];
-    for(int i =0;i<sizeof(str)/sizeof(str[0]);i++){
-        new[i]=str[i]+32;
+    
+    for(int i =0;i<sizeof(string)/sizeof(str[0]);i++){
+        result[i]=str[i]-32;
+        last =i;
     }
-    return new ;
+    printf("%d",last);
+    result[last]='\0';
+    return result ;
 }
