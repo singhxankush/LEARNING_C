@@ -1,30 +1,32 @@
-# include <stdio.h>
+#include <stdio.h>
 int main(){
-    char text[200];
-    printf("Hi, There please enter the paragarph\n.");
-    gets(text);
-    int words=1;
-    int characters=0;
-    int lines =0;
-    int i =0;
-    while (text[i]!='\0'){
-        if (text[i]==','||text[i]==' '){
-            words+=1;
-        }
-        if (text[i]=='?'||text[i]=='.'){
-            lines+=1;
-        }
-        characters+=1;
-        i++;
-    
-
+    int n =0;
+    int temp=0;
+    printf("please enter the number of elements in array");
+    scanf("%d",&n);
+    int num_arr[n];
+    for(int i =0;i<n;i++){
+        printf("\nenter the element %d ",i+1);
+        scanf("%d",&num_arr[i]);
     }
-    printf("The total charaters are :%d\nThe total words are :%d\nThe total lines are%d",characters,words,lines);
+    for(int i =0;i<n;i++){
+        printf("%d ",num_arr[i]);
+    }
+    //reversing an array 
 
+    for(int i =0;i<n;i++){
+        if((n-i+1)>(n)/2.0){
+            int temp=num_arr[n-i+1];
+            num_arr[n-i+1]=num_arr[i];
+            num_arr[i]=temp;
+        }
+        
+    }
+    for(int i =0;i<n;i++){
+        printf("%d ",num_arr[i]);
+    }
+    // i=0
+    // while(n-i+1=n/2.0 ){
 
-
-
-    
-    
-
+    // }
 }
