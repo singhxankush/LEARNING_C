@@ -1,1 +1,3 @@
-printf("%d ",arr[i]);
+if (n==0){
+        return 0;
+    }

@@ -1,12 +1,12 @@
 #include <stdio.h>
 char* to_up(char str[100]);
 char result[100];
-char string[]="ankush";
+char string[]="ankush singh is the best.";
 int last=0;
 int main(){
     
     printf("please enter the string ");
-    scanf("%s",&string);
+    // scanf("%s",&string);
     printf("%s",to_up(string));
 }
 char* to_up( char str[100]){

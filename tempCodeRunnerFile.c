@@ -1,21 +1,30 @@
-#include <stdio.h>
-char* to_up(char str[100]);
-char result[100];
-char string[]="ankush";
-int last=0;
+# include <stdio.h>
 int main(){
+    char text[200];
+    printf("Hi, There please enter the paragarph\n.");
+    gets(text);
+    int words=1;
+    int characters=0;
+    int lines =0;
+    int i =0;
+    while (text[i]!='\0'){
+        if (text[i]==','||text[i]==' '){
+            words+=1;
+        }
+        if (text[i]=='?'||text[i]=='.'){
+            lines+=1;
+        }
+        characters+=1;
+        i++;
     
-    printf("please enter the string ");
-    scanf("%s",&string);
-    printf("%s",to_up(string));
-}
-char* to_up( char str[100]){
-    
-    for(int i =0;i<sizeof(string)/sizeof(str[0]);i++){
-        result[i]=str[i]-32;
-        last =i;
+
     }
-    printf("%d",last);
-    result[last]='\0';
-    return result ;
+    printf("The total charaters are :%d\nThe total words are :%d\nThe total lines are%d",characters,words,lines);
+
+
+
+
+    
+    
+
 }
