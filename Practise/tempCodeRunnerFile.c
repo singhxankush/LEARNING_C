@@ -1,3 +1,1 @@
-if (n==0){
-        return 0;
-    }
+   // printf("the number of digits are %d",n_digit(&n));
