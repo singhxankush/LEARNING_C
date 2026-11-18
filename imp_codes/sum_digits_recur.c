@@ -8,6 +8,6 @@ int sum(int x ){
     
 }
 int main(){
-    printf("%d",sum(5343467));
+    printf("%d",sum(12));
 
 }

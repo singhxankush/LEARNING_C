@@ -9,7 +9,7 @@ int main(){
     }
     for(int i =0;i<5;i++){
         p[i]=i+5;
-    }
+    }nn
     for(int i =0;i<5;i++){
         printf("%d ",p[i]);
     }
